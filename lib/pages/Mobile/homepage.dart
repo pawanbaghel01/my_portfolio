@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_portpolio/Widgets/AppBar/CustomAppBar.dart';
 
+import '../../Widgets/Info/InfoSection.dart';
+
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({super.key});
@@ -13,6 +15,7 @@ class HomePageMobile extends StatelessWidget {
       child: Column(
         children: [
         CustomAppBar(),
+        InfoSection(),
         ],),
     ),  
     );
