@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portpolio/Widgets/AppBar/CustomAppBar.dart';
 
 
 class HomePageMobile extends StatelessWidget {
@@ -6,39 +7,14 @@ class HomePageMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: ListView(
-        children: const [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40,vertical: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("pawan "),
-                Text("baghel"),
-              ],
-            ),
-          ),
-
-          // add about widget
-             Row(
-              children: [
-                Text('something data Mobile View'),
-               // Image(image: AssetImage('')),
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 40,)
-              ],
-             )
-          // add skill 
-
-
-          // add software skills
-            
-            // add something data
-        ],
-      )
-      
+    return  const Scaffold(
+    body: Padding(
+      padding: EdgeInsets.all(30),
+      child: Column(
+        children: [
+        CustomAppBar(),
+        ],),
+    ),  
     );
   }
 }

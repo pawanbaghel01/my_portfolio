@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_portpolio/Configs/Thems.dart';
 import 'package:my_portpolio/View/HomePage/HomePageView.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
