@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:my_portpolio/Widgets/Desktop/AppBar/CustomAppBar.dart';
 import 'package:my_portpolio/Widgets/Desktop/Info/InfoSection.dart';
 import 'package:my_portpolio/Widgets/Desktop/MyServices/MyServices.dart';
+import 'package:my_portpolio/Widgets/Desktop/MySkills/MySkillSection.dart';
 
 
 class HomePageWeb extends StatelessWidget {
@@ -15,11 +16,13 @@ class HomePageWeb extends StatelessWidget {
          children:const [
             Column(
              children: [
-               CustomAppBar(),
-               SizedBox(height: 30,),
-               InfoSection(),
-               SizedBox(height: 30,),
-               MyServices(),
+              //  CustomAppBar(),
+              //  SizedBox(height: 30,),
+              //  InfoSection(),
+              //  SizedBox(height: 30,),
+              //  MyServices(),
+              //  SizedBox(height: 30,),
+               MySkillsSection(),
              ],),
          ],
        ),  

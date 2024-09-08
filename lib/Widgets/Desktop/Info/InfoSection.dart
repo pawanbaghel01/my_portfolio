@@ -11,31 +11,39 @@ class InfoSection extends StatelessWidget {
       child:  Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-           Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text("Hello, I'm Pawan Baghel Software developer"),
-              const SizedBox(height: 4,),
-               const Text("Hello, I'm Pawan Baghel Software developer"),
-               const SizedBox(height: 4,),
-               Row(
-                 children: [
-                   PrimaryButton( btnName: 'Hire me', onTap:(){}),
-                   const SizedBox(width: 20,),
-                   PrimaryButton( btnName: 'Get Resume', onTap:(){}),
-                 ],
-               ),
-               
-            ],
-          ),
-          const Column(
-            children: [
-              //add profile
-              Text('Add Image')
-             // Image.asset(ImagePath.profile,width: 350,),
-            ],
-          ),
+           Expanded(
+             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text("Hello, I'm Pawan Baghel Software developer"),
+                const SizedBox(height: 4,),
+                 const Text("Hello, I'm Pawan Baghel Software developer"),
+                 const SizedBox(height: 4,),
+                 Row(
+                   children: [
+                     PrimaryButton( btnName: 'Hire me', onTap:(){}),
+                     const SizedBox(width: 20,),
+                     PrimaryButton( btnName: 'Get Resume', onTap:(){}),
+                   ],
+                 ),
+                 
+              ],
+                       ),
+           ),
+           Expanded(
+             child: Column(
+              children: [
+                //add profile
+              Container(
+                       height: 200,
+                       width: 450,
+                       color: Colors.green,
+                     ),
+               // Image.asset(ImagePath.profile,width: 350,),
+              ],
+                       ),
+           ),
         ],
       ),
     );
