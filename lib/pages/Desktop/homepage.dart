@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:my_portpolio/Widgets/Desktop/Footer/FooterSection.dart';
+import 'package:my_portpolio/Widgets/Desktop/MyExperience/MyExperienceSection.dart';
 import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/MyKnowledgeSection.dart';
 import 'package:my_portpolio/Widgets/Desktop/MySkills/MySkillSection.dart';
 
@@ -24,9 +26,13 @@ class HomePageWeb extends StatelessWidget {
                SizedBox(height: 30,),
                MyServices(),
                SizedBox(height: 30,),
-              MySkillsSection(),
+               MySkillsSection(),
                SizedBox(height: 30,),
                MyKnowledgeSection(),
+               SizedBox(height: 30,),
+               MyExperienceSection(),
+               SizedBox(height: 30,),
+               FooterSection(),
              ],),
          ],
        ),  

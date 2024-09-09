@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 
 class FiledCircle extends StatelessWidget {
   final bool isFilled;
-  const FiledCircle({super.key, required this.isFilled});
+  final double size;
+  const FiledCircle({super.key, required this.isFilled, required this.size});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-                height: 30,
-                width: 30,
+                height: size,
+                width: size,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   color: isFilled? Theme.of(context).colorScheme.primary 

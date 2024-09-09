@@ -24,6 +24,7 @@ class MyKnowledgeSection extends StatelessWidget {
                 child: Technicleknowledge(),
                 ),
                 SizedBox(width: 20,),
+                // ye divider hata dena nahi to width kam kar dena
                 HorizontalDivider(height: 600),
                 SizedBox(width: 20,),
                  Expanded(

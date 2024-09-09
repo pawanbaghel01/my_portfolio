@@ -27,16 +27,16 @@ class LanguageKnowledge extends StatelessWidget {
           const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: false),
-              FiledCircle(isFilled: false),
-              FiledCircle(isFilled: false),
-              FiledCircle(isFilled: false),
-              FiledCircle(isFilled: false),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
             ],
           )
         ],
@@ -53,16 +53,16 @@ class LanguageKnowledge extends StatelessWidget {
           const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-               FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: true),
-              FiledCircle(isFilled: false),
-              FiledCircle(isFilled: false),
-              FiledCircle(isFilled: false),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: false,size: 30),
+              FiledCircle(isFilled: false,size: 30),
+              FiledCircle(isFilled: false,size: 30),
             ],
           )
         ],
@@ -81,14 +81,14 @@ class LanguageKnowledge extends StatelessWidget {
             children: [
             Row(
               children: [
-                  FiledCircle(isFilled: true),
+                  FiledCircle(isFilled: true,size: 30),
                   SizedBox(width: 20,),
             Text("Coding"),
               ],
             ),
             Row(
               children: [
-                  FiledCircle(isFilled: true),
+                  FiledCircle(isFilled: true,size: 30),
                   SizedBox(width: 20,),
             Text("Problem Solving"),
               ],
@@ -101,14 +101,14 @@ class LanguageKnowledge extends StatelessWidget {
             children: [
             Row(
               children: [
-                  FiledCircle(isFilled: true),
+                  FiledCircle(isFilled: true,size: 30),
                   SizedBox(width: 20,),
             Text("Meet People"),
               ],
             ),
             Row(
               children: [
-                  FiledCircle(isFilled: true),
+                 FiledCircle(isFilled: true,size: 30),
                   SizedBox(width: 20,),
             Text("Learn New Tech"),
               ],
