@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:my_portpolio/Widgets/Desktop/AppBar/CustomAppBar.dart';
-import 'package:my_portpolio/Widgets/Desktop/Info/InfoSection.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyServices/MyServices.dart';
+import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/MyKnowledgeSection.dart';
 import 'package:my_portpolio/Widgets/Desktop/MySkills/MySkillSection.dart';
+
+import '../../Widgets/Desktop/AppBar/CustomAppBar.dart';
+import '../../Widgets/Desktop/Info/InfoSection.dart';
+import '../../Widgets/Desktop/MyServices/MyServices.dart';
 
 
 class HomePageWeb extends StatelessWidget {
@@ -16,13 +18,15 @@ class HomePageWeb extends StatelessWidget {
          children:const [
             Column(
              children: [
-              //  CustomAppBar(),
-              //  SizedBox(height: 30,),
-              //  InfoSection(),
-              //  SizedBox(height: 30,),
-              //  MyServices(),
-              //  SizedBox(height: 30,),
-               MySkillsSection(),
+               CustomAppBar(),
+               SizedBox(height: 30,),
+               InfoSection(),
+               SizedBox(height: 30,),
+               MyServices(),
+               SizedBox(height: 30,),
+              MySkillsSection(),
+               SizedBox(height: 30,),
+               MyKnowledgeSection(),
              ],),
          ],
        ),  

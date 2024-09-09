@@ -19,7 +19,7 @@ class MyProgressIndicator extends StatelessWidget {
           radius: 60.0,
           lineWidth: 7.0,
           percent: percent % 100,
-          center: new Text(
+          center:  Text(
             lable,
             style: Theme.of(context).textTheme.bodySmall,
           ),
