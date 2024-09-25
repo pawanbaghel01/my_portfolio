@@ -21,7 +21,7 @@ class MySkillsSection extends StatelessWidget {
               child: ProgramingSkill(),
               ),
               SizedBox(width: 20,),
-              HorizontalDivider(height: 600),
+              HorizontalDivider(height: 500),
               SizedBox(width: 20,),
                Expanded(
                 child: SoftWareSkill(),
@@ -30,9 +30,7 @@ class MySkillsSection extends StatelessWidget {
               
                
             ],
-          ),
-          const SizedBox(height: 50,),
-        
+          ),        
         ],
       ),
     );

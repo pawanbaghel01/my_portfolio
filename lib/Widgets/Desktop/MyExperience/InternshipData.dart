@@ -10,28 +10,19 @@ class InternshipData extends StatelessWidget {
     return Column(
       children: [
       Row(
-           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text("Internship",style: Theme.of(context).textTheme.bodyLarge,),
           ],
         ),
-        const SizedBox(height: 25,),
-        InternshipWidget(date: '2023-2024', position: "Wordpress Developer", companyName: "Green Justise Network Foundation", companyLogo: "", 
-        description: 'This is my first internship of my life when a ful website for  a NGO. In this internship i developer some websites .'
+        
+        InternshipWidget(date: '2022-2023', position: "Flutter Developer", companyName: "Techie pvt.Ltd.", companyLogo: "", 
+        description: 'This is my first internship of my life when a full app ui create. In this internship i develope some apps ui .'
         , onTap: (){},isActive: true),
         const SizedBox(height: 20,),
-        InternshipWidget(date: '2023-2024', position: "Wordpress Developer", companyName: "Green Justise Network Foundation", companyLogo: "", 
-        description: 'This is my first internship of my life when a ful website for  a NGO. In this internship i developer some websites .'
-        , onTap: (){},isActive: true),
-        const SizedBox(height: 20,),
-        InternshipWidget(date: '2023-2024', position: "Wordpress Developer", companyName: "Green Justise Network Foundation", companyLogo: "", 
-        description: 'This is my first internship of my life when a ful website for  a NGO. In this internship i developer some websites .'
-        , onTap: (){},isActive: true),
-        const SizedBox(height: 20,),
-        InternshipWidget(date: '2023-2024', position: "Wordpress Developer", companyName: "Green Justise Network Foundation", companyLogo: "", 
-        description: 'This is my first internship of my life when a ful website for  a NGO. In this internship i developer some websites .'
+        InternshipWidget(date: '2023-2024', position: "Flutter Developer", companyName: "Ubi tech solution pvt.Ltd.", companyLogo: "", 
+        description: 'This is my second internship on flutter and dart when a full app for  a JunoFast. In this internship i develope some Apps .'
         , onTap: (){},isActive: true),
       ],
     );
-  }
+  } 
 }

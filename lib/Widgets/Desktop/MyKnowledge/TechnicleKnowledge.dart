@@ -9,7 +9,6 @@ class Technicleknowledge extends StatelessWidget {
     return Column(
       children: [
            Row(
-           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text("Technicle",style: Theme.of(context).textTheme.bodyLarge,),
           ],
@@ -45,7 +44,7 @@ class Technicleknowledge extends StatelessWidget {
               width: 10,
             ),
             Text(
-              'Authentication with firebase',
+              'API integration',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
@@ -64,7 +63,7 @@ class Technicleknowledge extends StatelessWidget {
               width: 10,
             ),
             Text(
-              'Authentication with firebase',
+              'State Management with GetX',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
@@ -83,7 +82,7 @@ class Technicleknowledge extends StatelessWidget {
               width: 10,
             ),
             Text(
-              'Authentication with firebase',
+              'Hive Local Database',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
@@ -102,7 +101,7 @@ class Technicleknowledge extends StatelessWidget {
               width: 10,
             ),
             Text(
-              'Authentication with firebase',
+              'Cloude Firestore',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
@@ -121,7 +120,7 @@ class Technicleknowledge extends StatelessWidget {
               width: 10,
             ),
             Text(
-              'Authentication with firebase',
+              'FCM for push notifications',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],

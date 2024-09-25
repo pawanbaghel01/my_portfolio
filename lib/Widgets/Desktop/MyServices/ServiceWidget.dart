@@ -22,8 +22,8 @@ class ServiceWidget extends StatelessWidget {
                 color: Theme.of(context).colorScheme.primary,
                 ),
               ),
-                Text(title),
-                Text(description),
+                Text(title,style: Theme.of(context).textTheme.bodyMedium),
+                Text(description,style: Theme.of(context).textTheme.labelMedium),
               ],
             );
   }

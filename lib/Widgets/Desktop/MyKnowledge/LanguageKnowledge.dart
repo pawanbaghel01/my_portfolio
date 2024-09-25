@@ -10,7 +10,7 @@ class LanguageKnowledge extends StatelessWidget {
     return Column(
       children: [
       Row(
-           mainAxisAlignment: MainAxisAlignment.spaceAround,
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text("Language",style: Theme.of(context).textTheme.bodyLarge,),
           ],
@@ -34,9 +34,9 @@ class LanguageKnowledge extends StatelessWidget {
               FiledCircle(isFilled: true,size: 30),
               FiledCircle(isFilled: true,size: 30),
               FiledCircle(isFilled: true,size: 30),
-              FiledCircle(isFilled: true,size: 30),
-              FiledCircle(isFilled: true,size: 30),
-              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: false,size: 30),
+              FiledCircle(isFilled: false,size: 30),
+              FiledCircle(isFilled: false,size: 30),
             ],
           )
         ],
@@ -60,14 +60,14 @@ class LanguageKnowledge extends StatelessWidget {
               FiledCircle(isFilled: true,size: 30),
               FiledCircle(isFilled: true,size: 30),
               FiledCircle(isFilled: true,size: 30),
-              FiledCircle(isFilled: false,size: 30),
-              FiledCircle(isFilled: false,size: 30),
+              FiledCircle(isFilled: true,size: 30),
+              FiledCircle(isFilled: true,size: 30),
               FiledCircle(isFilled: false,size: 30),
             ],
           )
         ],
        ),
-         const SizedBox(height: 25,),
+        const SizedBox(height: 25,),
        Column(
         children: [
           Row(

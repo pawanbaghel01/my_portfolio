@@ -22,7 +22,7 @@ class MyExperienceSection extends StatelessWidget {
               child: InternshipData(),
               ),
               SizedBox(width: 20,),
-              HorizontalDivider(height: 450),
+              HorizontalDivider(height: 650),
               SizedBox(width: 20,),
                Expanded(
                 child: ProjectData(),

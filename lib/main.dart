@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       home: const WebPointer(
           circleColor:  Color(0xff00DA64),
           roundColor:  Color(0xff00DA64),
-          child: HomePageView()),
-    );
+          child: HomePageView(),
+    ));
   }
 }

@@ -13,7 +13,7 @@ class MyLinearProgressIndicator extends StatelessWidget {
           children: [
              Row(
                children: [
-                 Text(skillName,style: Theme.of(context).textTheme.bodyMedium,),
+                Text(skillName,style: Theme.of(context).textTheme.bodyMedium,),
                ],
              ),
             Row(
@@ -24,7 +24,7 @@ class MyLinearProgressIndicator extends StatelessWidget {
                     lineHeight: 8,
                     animationDuration: 1000,
                     animation: true,
-                    barRadius: Radius.circular(100),
+                    barRadius: const Radius.circular(100),
                      progressColor: Theme.of(context).colorScheme.primary,
                      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
                   ),

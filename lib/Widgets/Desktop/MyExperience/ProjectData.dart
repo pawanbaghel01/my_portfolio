@@ -9,7 +9,6 @@ class ProjectData extends StatelessWidget {
     return Column(
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text(
               "Projects",
@@ -20,19 +19,19 @@ class ProjectData extends StatelessWidget {
         const SizedBox(
           height: 25,
         ),
-        ProjectWidget(
-            date: "1 Aug 2023 - 30 Aug 2023",
-            projectTitle: 'Ai interview preapration App for Student',
+            ProjectWidget(
+            date: "8 Aug 2023 - 10 Oct  2023",
+            projectTitle: 'Chat App',
             languages: const [
               "Flutter",
-              "C++",
-              "Java",
+              "Dart",
+              "Firebase",
             ],
             features: const [
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
+              "User Authentication",
+              "Real-time Messaging",
+              "Push Notifications",
+              "Search Functionality",
             ],
             screenShot: const [],
             liveLink: "",
@@ -40,22 +39,21 @@ class ProjectData extends StatelessWidget {
             linkedin: "",
             onTap: (){} ,
             isActive: true,
-            description: "this is Android application project that is made for student who want to preapare for interview of perpose for spoken english"
+            description: "A Flutter Chat App enables real-time messaging with features like user authentication, one-on-one chats, group messaging, and media sharing. It supports instant notifications, read receipts, and secure communication."
             ),
             const SizedBox(height: 10,),
             ProjectWidget(
-            date: "1 Aug 2023 - 30 Aug 2023",
-            projectTitle: 'Ai interview preapration App for Student',
+            date: "15 Oct  2023 - 4 Nov 2023",
+            projectTitle: ' BMI Calculator App',
             languages: const [
               "Flutter",
-              "C++",
-              "Java",
+              "Dart",
             ],
             features: const [
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
+              "Height & Weight Input",
+              "BMI Calculation",
+              "Health Risk Warnings",
+              "Dark Mode",
             ],
             screenShot: const [],
             liveLink: "",
@@ -63,30 +61,7 @@ class ProjectData extends StatelessWidget {
             linkedin: "",
             onTap: (){} ,
             isActive: true,
-            description: "this is Android application project that is made for student who want to preapare for interview of perpose for spoken english"
-            ),
-            const SizedBox(height: 10,),
-            ProjectWidget(
-            date: "1 Aug 2023 - 30 Aug 2023",
-            projectTitle: 'Ai interview preapration App for Student',
-            languages: const [
-              "Flutter",
-              "C++",
-              "Java",
-            ],
-            features: const [
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-              "Ai ChatGPT integration",
-            ],
-            screenShot: const [],
-            liveLink: "",
-            githubLink: "",
-            linkedin: "",
-            onTap: (){} ,
-            isActive: true,
-            description: "this is Android application project that is made for student who want to preapare for interview of perpose for spoken english"
+            description: "A BMI Calculator App allows users to quickly calculate their Body Mass Index by entering their height and weight. It provides instant results with a health classification and helps users track their fitness leve"
             )
 
       ],
