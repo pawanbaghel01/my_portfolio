@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portpolio/Widgets/Buttons/PrimaryButton.dart';
+import 'package:my_portpolio/Widgets/MyResume/ResumeView.dart';
 
 class InfoSection extends StatelessWidget {
   const InfoSection({super.key});
@@ -24,7 +25,9 @@ class InfoSection extends StatelessWidget {
                    children: [
                      PrimaryButton( btnName: 'Hire me', onTap:(){}),
                      const SizedBox(width: 20,),
-                     PrimaryButton( btnName: 'Get Resume', onTap:(){}),
+                     PrimaryButton( btnName: 'Get Resume', onTap:(){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) =>const MyResumeView(),));
+                     }),
                    ],
                  ),
                  

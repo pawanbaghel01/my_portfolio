@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portpolio/Configs/Thems.dart';
 import 'package:my_portpolio/View/HomePage/HomePageView.dart';
+import 'package:my_portpolio/Widgets/MyResume/ResumeView.dart';
 import 'package:web_pointer/web_pointer.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       home: const WebPointer(
           circleColor:  Color(0xff00DA64),
           roundColor:  Color(0xff00DA64),
-          child: HomePageView(),
+          child:HomePageView(),
     ));
   }
 }
