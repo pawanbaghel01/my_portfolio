@@ -80,7 +80,7 @@ class InternshipWidget extends StatelessWidget {
         ),
         Row(
           children: [
-            MyTextButton(btnName: "RECOMENDATION >", onTap: (){}),
+            MyTextButton(btnName: "RECOMENDATION >", onTap: onTap),
           ],
         ),
       ],

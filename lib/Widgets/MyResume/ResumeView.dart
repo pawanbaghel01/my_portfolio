@@ -21,9 +21,9 @@ class MyResumeView extends StatelessWidget {
       final url = html.Url.createObjectUrlFromBlob(blob);
 
       // Create a download anchor and trigger it
-      final anchor = html.AnchorElement(href: url)
-        ..setAttribute("download", "Pawan_Resume.pdf")
-        ..click();
+      // final anchor = html.AnchorElement(href: url)
+      //   ..setAttribute("download", "Pawan_Resume.pdf")
+      //   ..click();
 
       // Release the object URL after the download is triggered
       html.Url.revokeObjectUrl(url);

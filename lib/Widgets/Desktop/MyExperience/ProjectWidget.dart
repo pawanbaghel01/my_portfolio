@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:my_portpolio/Widgets/Buttons/MyTextButton.dart';
 import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/FiledCircle.dart';
+import 'package:my_portpolio/Widgets/SceenShots/screen_shots.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class ProjectWidget extends StatelessWidget {
   final String date;
   final String projectTitle;
   final List<String> languages;
   final List<String> features;
-  final List<String> screenShot;
+  final List<Map<String, String>> screenShot;
   final String liveLink;
   final String githubLink;
   final String linkedin;
@@ -121,14 +123,16 @@ class ProjectWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             MyTextButton(btnName: "LIVE LINK >", onTap: () {}),
-            MyTextButton(btnName: "GITHUB >", onTap: () {}),
+            MyTextButton(btnName: "GITHUB >", onTap: () {launchUrlString(githubLink);}),
             MyTextButton(btnName: "LINKEDIN >", onTap: () {}),
           ],
         ),
         const SizedBox(height: 10,),
         Row(
           children: [
-            MyTextButton(btnName: "SCREENSHOTS >", onTap: () {}),
+            MyTextButton(btnName: "SCREENSHOTS >", onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenshotGalleryPage(screenshots:screenShot),));
+            }),
           ],
         ),
       ],

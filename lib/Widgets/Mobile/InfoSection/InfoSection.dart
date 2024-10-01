@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_portpolio/Widgets/HireMe/hire_me.dart';
+import 'package:my_portpolio/Widgets/MyResume/ResumeView.dart';
 
 import '../../Buttons/PrimaryButton.dart';
 
@@ -24,9 +26,13 @@ class MobilInfoSection extends StatelessWidget {
           const SizedBox(height: 4,),
           Row(
             children: [
-              PrimaryButton( btnName: 'Hire me', onTap:(){}),
+              PrimaryButton( btnName: 'Hire me', onTap:(){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => HireMePage(),));
+              }),
               const SizedBox(width: 20,),
-              PrimaryButton( btnName: 'Get Resume', onTap:(){}),
+              PrimaryButton( btnName: 'Get Resume', onTap:(){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) =>const MyResumeView(),));
+              }),
             ],
           ),
           

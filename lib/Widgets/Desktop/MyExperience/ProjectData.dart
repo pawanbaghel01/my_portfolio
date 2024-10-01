@@ -19,7 +19,7 @@ class ProjectData extends StatelessWidget {
         const SizedBox(
           height: 25,
         ),
-            ProjectWidget(
+        ProjectWidget(
             date: "8 Aug 2023 - 10 Oct  2023",
             projectTitle: 'Chat App',
             languages: const [
@@ -33,16 +33,31 @@ class ProjectData extends StatelessWidget {
               "Push Notifications",
               "Search Functionality",
             ],
-            screenShot: const [],
+            screenShot: const [
+              {
+                'title': 'Screenshot 1',
+                'image': 'assets/screenshot1.png',
+              },
+              {
+                'title': 'Screenshot 2',
+                'image': 'assets/screenshot2.png',
+              },
+              {
+                'title': 'Screenshot 3',
+                'image': 'assets/screenshot3.png',
+              },
+            ],
             liveLink: "",
-            githubLink: "",
+            githubLink: "https://github.com/pawanbaghel01/intern_login_task",
             linkedin: "",
-            onTap: (){} ,
+            onTap: () {},
             isActive: true,
-            description: "A Flutter Chat App enables real-time messaging with features like user authentication, one-on-one chats, group messaging, and media sharing. It supports instant notifications, read receipts, and secure communication."
-            ),
-            const SizedBox(height: 10,),
-            ProjectWidget(
+            description:
+                "A Flutter Chat App enables real-time messaging with features like user authentication, one-on-one chats, group messaging, and media sharing. It supports instant notifications, read receipts, and secure communication."),
+        const SizedBox(
+          height: 10,
+        ),
+        ProjectWidget(
             date: "15 Oct  2023 - 4 Nov 2023",
             projectTitle: ' BMI Calculator App',
             languages: const [
@@ -57,13 +72,12 @@ class ProjectData extends StatelessWidget {
             ],
             screenShot: const [],
             liveLink: "",
-            githubLink: "",
+            githubLink: "https://github.com/pawanbaghel01",
             linkedin: "",
-            onTap: (){} ,
+            onTap: () {},
             isActive: true,
-            description: "A BMI Calculator App allows users to quickly calculate their Body Mass Index by entering their height and weight. It provides instant results with a health classification and helps users track their fitness leve"
-            )
-
+            description:
+                "A BMI Calculator App allows users to quickly calculate their Body Mass Index by entering their height and weight. It provides instant results with a health classification and helps users track their fitness leve")
       ],
     );
   }
