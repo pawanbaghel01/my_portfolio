@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:my_portpolio/Widgets/Desktop/Footer/FooterSection.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyExperience/MyExperienceSection.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/MyKnowledgeSection.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/MySkillSection.dart';
+import 'package:my_portfolio/Widgets/Desktop/Footer/FooterSection.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyExperience/MyExperienceSection.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyKnowledge/MyKnowledgeSection.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/MySkillSection.dart';
 
 import '../../Widgets/Desktop/AppBar/CustomAppBar.dart';
 import '../../Widgets/Desktop/Info/InfoSection.dart';

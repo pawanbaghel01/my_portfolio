@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/ResponsiveLayOut.dart';
-import 'package:my_portpolio/pages/Desktop/homepage.dart';
-import 'package:my_portpolio/pages/Mobile/homepage.dart';
+import 'package:my_portfolio/Widgets/ResponsiveLayOut.dart';
+import 'package:my_portfolio/pages/Desktop/homepage.dart';
+import 'package:my_portfolio/pages/Mobile/homepage.dart';
 
 class HomePageView extends StatelessWidget {
   const HomePageView({super.key});

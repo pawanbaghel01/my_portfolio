@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyExperience/InternshipData.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyExperience/ProjectData.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/HorizontalDivider.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyExperience/InternshipData.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyExperience/ProjectData.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/HorizontalDivider.dart';
 
 class MyExperienceSection extends StatelessWidget {
   const MyExperienceSection({super.key});
@@ -10,30 +10,26 @@ class MyExperienceSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 200,vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 200,vertical: 20),
       child: Column(
         children: [
           Text("Experience",style:  Theme.of(context).textTheme.bodyLarge,),
-          const SizedBox(height: 20,),
-          const Row(
+          const SizedBox(height: 40,),
+           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Expanded(
+              const Expanded(
               child: InternshipData(),
               ),
-              SizedBox(width: 20,),
-              HorizontalDivider(height: 650),
-              SizedBox(width: 20,),
-               Expanded(
+              const SizedBox(width: 20,),
+              HorizontalDivider(height: 1000,color: Theme.of(context).colorScheme.primaryContainer,),
+              const SizedBox(width: 20,),
+               const Expanded(
                 child: ProjectData(),
-              ),
-              SizedBox(width: 60,),
-              
-               
+              ),                        
             ],
-          ),
-          const SizedBox(height: 50,),
-        
+          ),        
         ],
       ),
     );

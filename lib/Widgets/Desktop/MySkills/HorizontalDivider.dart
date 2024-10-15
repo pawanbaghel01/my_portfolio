@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 class HorizontalDivider extends StatelessWidget {
   final double height;
-  const HorizontalDivider({super.key, required this.height});
+  final Color color;
+  const HorizontalDivider({super.key, required this.height,required this.color});
 
   @override
   Widget build(BuildContext context) {
     return Container(
      height: height,
      width: 3,
-     color: Theme.of(context).colorScheme.primaryContainer,
+     color: color,
     );
   }
 }

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyExperience/InternshipData.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyExperience/ProjectData.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyExperience/InternshipData.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyExperience/ProjectData.dart';
 
 class MobileMyExperienceSection extends StatelessWidget {
   const MobileMyExperienceSection({super.key});

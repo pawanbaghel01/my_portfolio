@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Buttons/MyTextButton.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/FiledCircle.dart';
-import 'package:my_portpolio/Widgets/SceenShots/screen_shots.dart';
+import 'package:my_portfolio/Widgets/Buttons/MyTextButton.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyKnowledge/FiledCircle.dart';
+import 'package:my_portfolio/Widgets/SceenShots/screen_shots.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class ProjectWidget extends StatelessWidget {
@@ -32,110 +32,113 @@ class ProjectWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 1,
-                  color: isActive
-                      ? Theme.of(context).colorScheme.primary
-                      : Theme.of(context).colorScheme.onPrimaryContainer,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 50,vertical: 30),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 1,
+                    color: isActive
+                        ? Theme.of(context).colorScheme.primary
+                        : Theme.of(context).colorScheme.onPrimaryContainer,
+                  ),
+                ),
+                child: Text(date,
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                          color: isActive
+                              ? Theme.of(context).colorScheme.primary
+                              : Theme.of(context).colorScheme.onPrimaryContainer,
+                        )),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              Text(
+                    projectTitle,
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              Flexible(
+                  child: Text(
+                description,
+                style: Theme.of(context).textTheme.labelMedium,
+              )),
+            ],
+          ),
+            const SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: languages.map((e) => Row(
+                children: [
+                  const FiledCircle(isFilled: true,size:17),
+                  const SizedBox(width: 10),
+                  Text(e),
+                ],
+              ),).toList()
+            ),
+         const SizedBox(height: 10,),
+          Row(
+            children: [
+              Flexible(
+                  child: Text(
+                "Features of Projects ",
+                style: Theme.of(context).textTheme.bodyMedium,
+              )),
+            ],
+          ),
+          Column(
+            children: features.map((e)=>Row(children:[
+              Container(
+                width: 6,
+                height: 6,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  color: Theme.of(context).colorScheme.primary,
                 ),
               ),
-              child: Text(date,
-                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                        color: isActive
-                            ? Theme.of(context).colorScheme.primary
-                            : Theme.of(context).colorScheme.onPrimaryContainer,
-                      )),
-            ),
-          ],
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Row(
-          children: [
-            Text(
-                  projectTitle,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
-          ],
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Row(
-          children: [
-            Flexible(
-                child: Text(
-              description,
-              style: Theme.of(context).textTheme.labelMedium,
-            )),
-          ],
-        ),
-          const SizedBox(height: 10,),
+              const SizedBox(width: 5,),
+              Text(
+                e,
+                style: Theme.of(context).textTheme.labelMedium,
+              )
+            ],)).toList(),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: languages.map((e) => Row(
-              children: [
-                const FiledCircle(isFilled: true,size:17),
-                const SizedBox(width: 10),
-                Text(e),
-              ],
-            ),).toList()
+            children: [
+              MyTextButton(btnName: "LIVE LINK >", onTap: () {}),
+              MyTextButton(btnName: "GITHUB >", onTap: () {launchUrlString(githubLink);}),
+              MyTextButton(btnName: "LINKEDIN >", onTap: () {launchUrlString(linkedin);}),
+            ],
           ),
-       const SizedBox(height: 10,),
-        Row(
-          children: [
-            Flexible(
-                child: Text(
-              "Features of Projects ",
-              style: Theme.of(context).textTheme.bodyMedium,
-            )),
-          ],
-        ),
-        Column(
-          children: features.map((e)=>Row(children:[
-            Container(
-              width: 6,
-              height: 6,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                color: Theme.of(context).colorScheme.primary,
-              ),
-            ),
-            const SizedBox(width: 5,),
-            Text(
-              e,
-              style: Theme.of(context).textTheme.labelMedium,
-            )
-          ],)).toList(),
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            MyTextButton(btnName: "LIVE LINK >", onTap: () {}),
-            MyTextButton(btnName: "GITHUB >", onTap: () {launchUrlString(githubLink);}),
-            MyTextButton(btnName: "LINKEDIN >", onTap: () {}),
-          ],
-        ),
-        const SizedBox(height: 10,),
-        Row(
-          children: [
-            MyTextButton(btnName: "SCREENSHOTS >", onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenshotGalleryPage(screenshots:screenShot),));
-            }),
-          ],
-        ),
-      ],
+          const SizedBox(height: 10,),
+          Row(
+            children: [
+              MyTextButton(btnName: "SCREENSHOTS >", onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenshotGalleryPage(screenshots:screenShot),));
+              }),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

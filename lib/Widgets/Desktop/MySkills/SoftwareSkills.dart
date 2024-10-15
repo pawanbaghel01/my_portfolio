@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/MyLinearProgressIndicator.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/MyLinearProgressIndicator.dart';
 
 class SoftWareSkill extends StatelessWidget {
   const SoftWareSkill({super.key});
@@ -22,7 +22,7 @@ class SoftWareSkill extends StatelessWidget {
           const SizedBox(height: 25,),
           const MyLinearProgressIndicator(percent: 0.8, lable: "80%", skillName: "Firebase"),
           const SizedBox(height: 25,),
-          const MyLinearProgressIndicator(percent: 0.3, lable: "30%", skillName: "XL"),
+          const MyLinearProgressIndicator(percent: 0.3, lable: "30%", skillName: "Excel"),
           const SizedBox(height: 25,),
           const MyLinearProgressIndicator(percent: 0.6, lable: "60%", skillName: "Android Studio"),
           const SizedBox(height: 25,),

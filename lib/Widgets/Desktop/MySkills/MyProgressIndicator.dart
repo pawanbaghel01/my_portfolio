@@ -24,7 +24,7 @@ class MyProgressIndicator extends StatelessWidget {
             style: Theme.of(context).textTheme.bodySmall,
           ),
           circularStrokeCap: CircularStrokeCap.round,
-          animationDuration: 1000,
+          animationDuration: 5000,
           animation: true,
           progressColor: Theme.of(context).colorScheme.primary,
           backgroundColor: Theme.of(context).colorScheme.primaryContainer,

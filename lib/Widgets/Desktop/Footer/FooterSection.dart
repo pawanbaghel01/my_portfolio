@@ -5,53 +5,109 @@ class FooterSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       color: Theme.of(context).colorScheme.primaryContainer,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 200,vertical: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 30),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween, // Ensures spacing between sections
+          crossAxisAlignment: CrossAxisAlignment.start, // Aligns the columns at the top
           children: [
+            // Work With Us Section
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Work With US",style:  Theme.of(context).textTheme.labelMedium,),
-                  Text("test1@pawan.in",style:  Theme.of(context).textTheme.bodyMedium,),
-                ],
-              ),
-            ),
-            const SizedBox(width: 50,),
-             Expanded(
-             child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Follow US",style:  Theme.of(context).textTheme.labelMedium,),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Instagram",style:  Theme.of(context).textTheme.bodyMedium,),
-                      Text("Linkedin",style:  Theme.of(context).textTheme.bodyMedium,),
-                      Text("Facebook",style:  Theme.of(context).textTheme.bodyMedium,),
+                      Text(
+                        "Work With Us",
+                        style: Theme.of(context).textTheme.labelMedium,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10), // Spacing between elements
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "test1@pawan.in",
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
                     ],
                   ),
                 ],
               ),
             ),
-            const SizedBox(width: 50,),
-             Expanded(
+            
+            const SizedBox(width: 50),
+            
+            // Follow Us Section
+            Expanded(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center, // Aligning center for the text
                 children: [
-                  Text("Portfolio",style:  Theme.of(context).textTheme.labelMedium,),
-                  Text("Made With 💜 Pawan Baghel",style:  Theme.of(context).textTheme.bodyMedium,),
-                 // Text("Enjoy! 🔎❌💖🔥✅😍")
+                  Text(
+                    "Follow Us",
+                    style: Theme.of(context).textTheme.labelMedium,
+                  ),
+                  const SizedBox(height: 10), // Spacing between title and links
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center, // Align links centrally
+                    children: [
+                      Text(
+                        "Instagram",
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                      const SizedBox(width: 15),
+                      Text(
+                        "LinkedIn",
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                      const SizedBox(width: 15),
+                      Text(
+                        "Facebook",
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
-            const SizedBox(height: 30,),
+            
+            const SizedBox(width: 50),
+            
+            // Portfolio (Profile) Section
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end, // Aligning right for the text
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Portfolio",
+                        style: Theme.of(context).textTheme.labelMedium,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10), // Spacing between elements
+                  Text(
+                    "Made With 💜 Pawan Baghel",
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+//Text("Enjoy! 🔎❌💖🔥✅😍")

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Buttons/MyTextButton.dart';
+import 'package:my_portfolio/Widgets/Buttons/MyTextButton.dart';
 
 class InternshipWidget extends StatelessWidget {
   final String date;

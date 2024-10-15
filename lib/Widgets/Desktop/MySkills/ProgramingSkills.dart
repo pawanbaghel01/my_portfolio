@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/MyProgressIndicator.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/MyProgressIndicator.dart';
 
 class ProgramingSkill extends StatelessWidget {
   const ProgramingSkill({super.key});

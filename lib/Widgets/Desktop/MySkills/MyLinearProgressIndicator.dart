@@ -22,7 +22,7 @@ class MyLinearProgressIndicator extends StatelessWidget {
                   child: LinearPercentIndicator(
                     percent: percent,
                     lineHeight: 8,
-                    animationDuration: 1000,
+                    animationDuration: 5000,
                     animation: true,
                     barRadius: const Radius.circular(100),
                      progressColor: Theme.of(context).colorScheme.primary,

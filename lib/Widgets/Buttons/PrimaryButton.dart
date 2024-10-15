@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/HoverWidget.dart';
+import 'package:my_portfolio/Widgets/HoverWidget.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String btnName;

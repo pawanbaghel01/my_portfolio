@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/ProgramingSkills.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/SoftwareSkills.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/ProgramingSkills.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/SoftwareSkills.dart';
 
 
 class MobileMYSkillSection extends StatelessWidget {

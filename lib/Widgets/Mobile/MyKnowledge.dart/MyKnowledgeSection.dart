@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/LanguageKnowledge.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/TechnicleKnowledge.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyKnowledge/LanguageKnowledge.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyKnowledge/TechnicleKnowledge.dart';
 
 class MobileMyKnowledgeSection extends StatelessWidget {
   const MobileMyKnowledgeSection({super.key});

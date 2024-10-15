@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/LanguageKnowledge.dart';
-import 'package:my_portpolio/Widgets/Desktop/MyKnowledge/TechnicleKnowledge.dart';
-import 'package:my_portpolio/Widgets/Desktop/MySkills/HorizontalDivider.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyKnowledge/LanguageKnowledge.dart';
+import 'package:my_portfolio/Widgets/Desktop/MyKnowledge/TechnicleKnowledge.dart';
+import 'package:my_portfolio/Widgets/Desktop/MySkills/HorizontalDivider.dart';
 
 class MyKnowledgeSection extends StatelessWidget {
   const MyKnowledgeSection({super.key});
@@ -17,20 +17,19 @@ class MyKnowledgeSection extends StatelessWidget {
           children: [
             Text("Knowledge",style:  Theme.of(context).textTheme.bodyLarge,),
             const SizedBox(height: 20,),
-            const Row(
+             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
+                const Expanded(
                 child: Technicleknowledge(),
                 ),
-                SizedBox(width: 20,),
-                // ye divider hata dena nahi to width kam kar dena
-                HorizontalDivider(height: 450),
-                SizedBox(width: 20,),
-                 Expanded(
+                const SizedBox(width: 20,),
+                HorizontalDivider(height: 450,color:Theme.of(context).colorScheme.surface),
+                const SizedBox(width: 20,),
+                 const Expanded(
                   child: LanguageKnowledge(),
                 ),
-                SizedBox(width: 60,),
+                const SizedBox(width: 60,),
                 
                  
               ],

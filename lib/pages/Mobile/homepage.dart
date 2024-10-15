@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_portpolio/Widgets/Mobile/AppBar/AppBar.dart';
-import 'package:my_portpolio/Widgets/Mobile/Footer/MyFooterSection.dart';
-import 'package:my_portpolio/Widgets/Mobile/InfoSection/InfoSection.dart';
-import 'package:my_portpolio/Widgets/Mobile/MyExperience/MyExperience.dart';
-import 'package:my_portpolio/Widgets/Mobile/MyKnowledge.dart/MyKnowledgeSection.dart';
-import 'package:my_portpolio/Widgets/Mobile/MyServices/MyServicesSection.dart';
+import 'package:my_portfolio/Widgets/Mobile/AppBar/AppBar.dart';
+import 'package:my_portfolio/Widgets/Mobile/Footer/MyFooterSection.dart';
+import 'package:my_portfolio/Widgets/Mobile/InfoSection/InfoSection.dart';
+import 'package:my_portfolio/Widgets/Mobile/MyExperience/MyExperience.dart';
+import 'package:my_portfolio/Widgets/Mobile/MyKnowledge.dart/MyKnowledgeSection.dart';
+import 'package:my_portfolio/Widgets/Mobile/MyServices/MyServicesSection.dart';
 
 import '../../Widgets/Mobile/MySkill/MobileSkillSection.dart';
 
