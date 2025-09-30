@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';  
+import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HireMePage extends StatelessWidget {
   final TextEditingController _nameController = TextEditingController();
@@ -9,23 +10,41 @@ class HireMePage extends StatelessWidget {
   HireMePage({super.key});
 
  void _sendEmail() async {
+  const String myEmail = "pawanbaghel752@gmail.com";
   final String name = _nameController.text;
   final String email = _emailController.text;
   final String message = _messageController.text;
-
+  //sendEmail(myEmail, name, email, message);
   final Uri emailUri = Uri(
     scheme: 'mailto',
-    path: 'your-email@example.com', // Replace with your email
+    path: myEmail, // Replace with your email
     query: 'subject=Hire Me Inquiry&body=Name: $name\nEmail: $email\n\n$message',
   );
 
   if (await canLaunchUrl(emailUri)) {
     await launchUrl(emailUri);
+    print("send email successfull");
   } else {
+    print("Email not send");
     throw 'Could not launch $emailUri';
-  }
-}
+   }
+ }
 
+   Future<void> sendEmail(String recipientEmail, String name, String email, String description,) async {
+  final Email emailToSend = Email(
+    body: 'Name: $name\nEmail: $email\nDescription: $description',
+    subject: 'Hire me',
+    recipients: [recipientEmail],
+    isHTML: false,
+  );
+
+  try {
+    await FlutterEmailSender.send(emailToSend);
+    print('Email sent successfully');
+  } catch (error) {
+    print('Failed to send email: $error');
+  }
+  }
 
   @override
   Widget build(BuildContext context) {

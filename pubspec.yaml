@@ -42,6 +42,7 @@ dependencies:
   path_provider: ^2.1.4
   html: ^0.15.4
   animated_text_kit: ^4.2.2
+  flutter_email_sender: ^6.0.3
 
 dev_dependencies:
   flutter_test:
