@@ -50,7 +50,7 @@ class HireMePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hire Me'),
+        title: const Text('Contact Me'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

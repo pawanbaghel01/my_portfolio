@@ -16,7 +16,7 @@ class MyKnowledgeSection extends StatelessWidget {
         child: Column(
           children: [
             Text("Knowledge",style:  Theme.of(context).textTheme.bodyLarge,),
-            const SizedBox(height: 20,),
+            const SizedBox(height: 40,),
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -24,7 +24,7 @@ class MyKnowledgeSection extends StatelessWidget {
                 child: Technicleknowledge(),
                 ),
                 const SizedBox(width: 20,),
-                HorizontalDivider(height: 450,color:Theme.of(context).colorScheme.surface),
+                HorizontalDivider(height: 500,color:Theme.of(context).colorScheme.surface),
                 const SizedBox(width: 20,),
                  const Expanded(
                   child: LanguageKnowledge(),

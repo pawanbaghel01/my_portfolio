@@ -2,21 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/Widgets/Desktop/MyExperience/ProjectWidget.dart';
 
 class ProjectData extends StatelessWidget {
-  const ProjectData({super.key});
+  final double horizontal;
+  const ProjectData({super.key,this.horizontal = 50});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 30),
+      padding: EdgeInsets.symmetric(horizontal: horizontal),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 50),
-            child: Text(
-              "Projects",
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
+          Text(
+            "Projects",
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
           const SizedBox(
             height: 10,

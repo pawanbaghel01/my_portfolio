@@ -8,11 +8,11 @@ class MobileFooterSection extends StatelessWidget {
     return  Container(
       color: Theme.of(context).colorScheme.primaryContainer,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
         child: Column(
           children: [
             Text("Work With US",style:  Theme.of(context).textTheme.labelMedium,),
-            Text("test1@pawan.in",style:  Theme.of(context).textTheme.bodyMedium,),
+            Text("pawanbaghel752@gmial.com",style:  Theme.of(context).textTheme.bodyMedium,),
             const SizedBox(height: 20,),
              Text("Follow US",style:  Theme.of(context).textTheme.labelMedium,),
              Row(

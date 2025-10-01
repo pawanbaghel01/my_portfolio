@@ -7,7 +7,7 @@ class SoftWareSkill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 50,vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 50),
       child: Column(
         children: [
            Row(
@@ -29,7 +29,7 @@ class SoftWareSkill extends StatelessWidget {
           const MyLinearProgressIndicator(percent: 0.8, lable: "80%", skillName: "Dev++"),
           const SizedBox(height: 25,),
           const MyLinearProgressIndicator(percent: 0.3, lable: "30%", skillName: "Canva"),
-          const SizedBox(height: 25,),
+          const SizedBox(height: 80,),
         ],
       ),
     );

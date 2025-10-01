@@ -10,7 +10,7 @@ class MyExperienceSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 200,vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 200),
       child: Column(
         children: [
           Text("Experience",style:  Theme.of(context).textTheme.bodyLarge,),
@@ -23,7 +23,7 @@ class MyExperienceSection extends StatelessWidget {
               child: InternshipData(),
               ),
               const SizedBox(width: 20,),
-              HorizontalDivider(height: 1000,color: Theme.of(context).colorScheme.primaryContainer,),
+              HorizontalDivider(height: 800,color: Theme.of(context).colorScheme.primaryContainer,),
               const SizedBox(width: 20,),
                const Expanded(
                 child: ProjectData(),

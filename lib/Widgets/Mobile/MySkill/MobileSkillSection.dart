@@ -9,14 +9,14 @@ class MobileMYSkillSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text("Skills",style:  Theme.of(context).textTheme.bodyLarge,),
           const SizedBox(height: 20,),
           const ProgramingSkill(),
           const SoftWareSkill(),
-        
         ],
       ),
     );

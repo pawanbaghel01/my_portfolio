@@ -9,11 +9,11 @@ class MySkillsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 200,vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 200,vertical: 10),
       child: Column(
         children: [
           Text("Skills",style:  Theme.of(context).textTheme.bodyLarge,),
-          const SizedBox(height: 50,),
+          const SizedBox(height: 20,),
            Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -21,14 +21,11 @@ class MySkillsSection extends StatelessWidget {
               child: ProgramingSkill(),
               ),
               const SizedBox(width: 20,),
-              HorizontalDivider(height: 500,color:Theme.of(context).colorScheme.primaryContainer),
+              HorizontalDivider(height: 550,color:Theme.of(context).colorScheme.primaryContainer),
               const SizedBox(width: 20,),
                const Expanded(
                 child: SoftWareSkill(),
               ),
-              const SizedBox(width: 60,),
-              
-               
             ],
           ),        
         ],

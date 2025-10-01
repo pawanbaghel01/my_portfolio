@@ -7,55 +7,89 @@ class MobileMYServicesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      return  Container(
-      color: Theme.of(context).colorScheme.primaryContainer,
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          children: [
-            Text("My Services",style:  Theme.of(context).textTheme.bodyLarge,),
-            const SizedBox(height: 50,),
-          const Row(
-            children: [
-             Expanded(
-                  child: ServiceWidget(iconData: Icons.supervised_user_circle, title: "Front End", description: "I am pawna baghel . i am pursuing BTech (cs) in vikrant collage gwalior mp.My village karila lahar bhind mp.I am a good student .")
+    return Container(
+        color: Theme.of(context).colorScheme.primaryContainer,
+        child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children: [
+                Text(
+                  "My Services",
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
-                SizedBox(width: 20,),
+                const SizedBox(
+                  height: 50,
+                ),
+                 const Row(
+              children: [
                 Expanded(
-                  child: ServiceWidget(iconData: Icons.supervised_user_circle, title: "Front End", description: "I am pawna baghel . i am pursuing BTech (cs) in vikrant collage gwalior mp.My village karila lahar bhind mp.I am a good student .")
+                  child: ServiceWidget(
+                    iconData: Icons.phone_android,
+                    title: "Cross-Platform App Development",
+                    description:
+                        "I build high-quality mobile applications for Android & iOS using a single Flutter codebase, ensuring consistent UI, smooth animations, and optimized performance across both platforms.",
+                  ),
                 ),
-               
-            ],
-          ),
-           const SizedBox(height: 20,),
-           const Row(
-            children: [
-             Expanded(
-                  child: ServiceWidget(iconData: Icons.supervised_user_circle, title: "Front End", description: "I am pawna baghel . i am pursuing BTech (cs) in vikrant collage gwalior mp.My village karila lahar bhind mp.I am a good student .")
-                ),
-                SizedBox(width: 20,),
+                SizedBox(width: 20),
                 Expanded(
-                  child: ServiceWidget(iconData: Icons.supervised_user_circle, title: "Front End", description: "I am pawna baghel . i am pursuing BTech (cs) in vikrant collage gwalior mp.My village karila lahar bhind mp.I am a good student .")
+                  child: ServiceWidget(
+                    iconData: Icons.cloud,
+                    title: "API Integration & Backend Connectivity",
+                    description:
+                        "I integrate apps with REST APIs, GraphQL, and Firebase to enable real-time data, authentication, and smooth backend communication for scalable mobile solutions.",
+                  ),
                 ),
-               
-            ],
-          ),
-          const SizedBox(height: 20,),
-          const Row(
-            children: [
-             Expanded(
-                  child: ServiceWidget(iconData: Icons.supervised_user_circle, title: "Front End", description: "I am pawna baghel . i am pursuing BTech (cs) in vikrant collage gwalior mp.My village karila lahar bhind mp.I am a good student .")
+              ],
+            ),
+                const SizedBox(
+                  height: 20,
                 ),
-                SizedBox(width: 20,),
+                const Row(
+              children: [
                 Expanded(
-                  child: ServiceWidget(iconData: Icons.supervised_user_circle, title: "Front End", description: "I am pawna baghel . i am pursuing BTech (cs) in vikrant collage gwalior mp.My village karila lahar bhind mp.I am a good student .")
+                  child: ServiceWidget(
+                    iconData: Icons.publish,
+                    title: "Deployment & Publishing",
+                    description:
+                        "I handle complete deployment and publishing processes for Google Play Store and Apple App Store, including app signing, versioning, and release management.",
+                  ),
                 ),
-               
-            ],
-          ),
-          ],
-        )
-        )
-        );
+                SizedBox(width: 20),
+               Expanded(
+                  child: ServiceWidget(
+                    iconData: Icons.design_services,
+                    title: "Custom UI/UX Development",
+                    description:
+                        "I create modern, responsive, and pixel-perfect interfaces following Material Design & Cupertino guidelines, delivering engaging and user-friendly mobile experiences.",
+                  ),
+                ),
+              ],
+            ),
+              const SizedBox(
+                  height: 20,
+                ),
+                const Row(
+                  children: [
+                     Expanded(
+                  child: ServiceWidget(
+                    iconData: Icons.settings,
+                    title: "State Management Solutions",
+                    description:
+                        "I implement scalable state management using Provider, Riverpod, GetX, or Bloc, ensuring apps remain efficient, maintainable, and responsive to data changes.",
+                  ),
+                ),
+                SizedBox(width: 20),
+                Expanded(
+                  child: ServiceWidget(
+                    iconData: Icons.storage,
+                    title: "Database & CRUD Operations",
+                    description:
+                        "I design and integrate local and cloud databases (SQLite, Hive, Firebase Firestore) with complete CRUD functionality to ensure smooth data handling and persistence.",
+                  ),
+                ),  ],
+                ),
+                
+              ],
+            )));
   }
 }

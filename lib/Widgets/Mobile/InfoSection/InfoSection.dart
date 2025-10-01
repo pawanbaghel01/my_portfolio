@@ -44,7 +44,7 @@ class MobilInfoSection extends StatelessWidget {
             height: 4,
           ),
           const Text(
-              "I am a Flutter developer with over 3 Months of experience, specializing in crafting efficient, scalable mobile and web applications. I have a deep understanding of Flutter, Firebase, and state management solutions like GetX, allowing me to build seamless user experiences."),
+              "I am a Flutter developer with over 1 Years of experience, specializing in crafting efficient, scalable mobile and web applications. I have a deep understanding of Flutter, Firebase, and state management solutions like GetX, allowing me to build seamless user experiences."),
           const SizedBox(
             height: 20,
           ),
@@ -52,7 +52,7 @@ class MobilInfoSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               PrimaryButton(
-                  btnName: 'Hire me',
+                  btnName: 'Get In Touch',
                   onTap: () {
                     Navigator.push(
                         context,

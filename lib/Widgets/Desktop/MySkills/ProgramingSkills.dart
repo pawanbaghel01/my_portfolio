@@ -7,13 +7,15 @@ class ProgramingSkill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal:20,vertical: 30),
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text("Programing",style: Theme.of(context).textTheme.bodyLarge,),
+              Padding(
+                padding: const EdgeInsets.only(left: 40),
+                child: Text("Programing",style: Theme.of(context).textTheme.bodyLarge,),
+              ),
             ],
           ),
           const SizedBox(height: 25,),

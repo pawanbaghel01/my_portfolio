@@ -11,7 +11,7 @@ class MyResumeView extends StatelessWidget {
   Future<void> _downloadFileWeb() async {
     try {
       // Load the PDF from the assets
-      ByteData data = await rootBundle.load("assets/MyResume/Pawan Resume.pdf");
+      ByteData data = await rootBundle.load("assets/MyResume/pawan_resume.pdf");
       Uint8List bytes = data.buffer.asUint8List();
 
       // Create a Blob from the PDF data
@@ -21,16 +21,15 @@ class MyResumeView extends StatelessWidget {
       final url = html.Url.createObjectUrlFromBlob(blob);
 
       // Create a download anchor and trigger it
-      // final anchor = html.AnchorElement(href: url)
-      //   ..setAttribute("download", "Pawan_Resume.pdf")
-      //   ..click();
+       html.AnchorElement(href: url)
+        ..setAttribute("download", "pawan_resume.pdf")
+        ..click();
 
       // Release the object URL after the download is triggered
       html.Url.revokeObjectUrl(url);
       print('download pdf done');
     } catch (e) {
       print("Error downloading file: $e");
-      
     }
   }
 
@@ -45,10 +44,12 @@ class MyResumeView extends StatelessWidget {
             tooltip: 'download',
             onPressed: _downloadFileWeb, // Trigger the web download function
           ),
-          SizedBox(width: 20,),
+         const SizedBox(
+            width: 20,
+          ),
         ],
       ),
-      body: SfPdfViewer.asset("assets/MyResume/Pawan Resume.pdf"),
+      body: SfPdfViewer.asset("assets/MyResume/pawan_resume.pdf"),
     );
   }
 }
