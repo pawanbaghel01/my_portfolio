@@ -32,7 +32,7 @@ class FooterSection extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "test1@pawan.in",
+                        "pawanbaghel752@gmail.com",
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ],
